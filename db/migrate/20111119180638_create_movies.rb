@@ -16,4 +16,8 @@ class CreateMovies < ActiveRecord::Migration
   end
 end
 
-
+class AddDirectorColumn < ActiveRecord::Migration
+	def up
+		add_column :movies, :director, :string, {:default => "Nobody"}
+	end
+end

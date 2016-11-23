@@ -1,6 +1,6 @@
 class AddDirectorColumn < ActiveRecord::Migration
   def up
-  	add_column :movies, :director, :string
+  	add_column :movies, :director, :string, {:default => "Nobody"}
   end
 
   def down
